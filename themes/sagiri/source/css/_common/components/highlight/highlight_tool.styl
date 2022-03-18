@@ -1,0 +1,63 @@
+figure.highlight {
+	border-radius: 7px;
+	-webkit-transform: translateZ(0);
+
+	.highlight-tools {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 1.5rem;
+		background: darken($highlight-background, 100%);
+		color: lighten($highlight-background, 50%);
+		font-size: 14px
+		&:after {
+			position: absolute;
+			top: .45rem;
+			left: .7rem;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: #fc625d;
+			box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+			content: ' ';
+		}
+
+		.code-expand {
+			position: absolute;
+			top: 0rem;
+			right: 0rem;
+			padding: 0.4rem;
+			cursor: pointer;
+			transition: all 0.3s;
+			transform: rotate(0);
+		}
+
+		.code-lang {
+			text-align: center;
+			left: 4.7rem;
+			font-weight: bold;
+			font-size: 0.8rem;
+			line-height: 1.5rem;
+		}
+
+		.code-closed {
+			transition: all 0.3s;
+			transform: rotate(+90deg) !important;
+		}
+
+		.copy-button {
+			position: absolute;
+			top: 0.4rem;
+			right: 2rem;
+			cursor: pointer;
+			transition: color 0.2s;
+		}
+
+		.copy-notice {
+			position: absolute;
+			top: 0rem;
+			right: 3.4rem;
+			opacity: 0;
+		}
+	}
+}

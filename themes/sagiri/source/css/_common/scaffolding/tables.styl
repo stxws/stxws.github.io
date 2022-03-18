@@ -1,0 +1,30 @@
+table {
+  margin: 20px 0;
+  width: $table-width;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $table-border-color;
+  font-size: $table-font-size;
+  table-layout: fixed;
+  word-wrap: break-all;
+}
+table>tbody>tr {
+  &:nth-of-type(odd) { background-color: $table-row-odd-bg-color; }
+  &:hover { background-color: $table-row-hover-bg-color; }
+}
+
+caption, th, td {
+  padding: $table-cell-padding;
+  vertical-align: $table-content-vertical;
+  font-weight: normal;
+}
+
+th, td {
+  border: 1px solid $table-border-color;
+}
+
+th {
+  padding-bottom: 10px;
+  font-weight: $table-th-font-weight;
+  border-bottom-width: 3px;
+}

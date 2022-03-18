@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+db.json
+qiniu.json
+package-lock.json
+*.log
+node_modules/
+public/
+qiniu/
+.deploy*/
+themes/*
+!themes/sagiri/

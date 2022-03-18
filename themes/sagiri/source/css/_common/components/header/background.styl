@@ -1,0 +1,19 @@
+$background_image_1_url = hexo-config('background.image_src_1')
+$background_image_2_url = hexo-config('background.image_src_2')
+
+.background-image {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+    height: 100%;
+	z-index: -100;
+	opacity: $background_image_opacity;
+	
+	content: url($background_image_1_url);
+	+mobile() {
+		width: 100%;
+		height: 100%;
+		right: 0px;
+		content: url($background_image_2_url);
+	}
+}

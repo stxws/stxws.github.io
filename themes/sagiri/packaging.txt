@@ -1,0 +1,13 @@
+1. 安装webpack：
+	npm install --save-dev webpack
+	npm install --save-dev webpack-cli
+	安装完成后手动删除生成的package-lock.json文件！
+2. 安装yarn
+	npm install -g yarn --registry=https://registry.npm.taobao.org
+3. 换源：
+	将 yarn.lock 中的 registry.npm.bilibili.com 全部手动替换为 registry.npm.taobao.org
+4. 利用yarn安装所需依赖：
+	yarn install
+	如果中间卡住或者不正常退出，改用 yarn install --verbose 便于找出问题
+5. 打包：
+	npx webpack --config webpack.config.js

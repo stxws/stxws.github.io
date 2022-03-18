@@ -1,0 +1,45 @@
+.site-brand-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.site-meta {
+  color: white;
+}
+
+.brand {
+  padding: 0;
+  background: none;
+  position: relative;
+  font-size: 68px;
+  text-align: center;
+  text-shadow: 0 1px 1px #47456d;
+  z-index: 1;
+  font-family: $font-family-title;
+  display: block;
+
+  +mobile() {
+    top: 40px;
+    margin-bottom: 0;
+  }
+
+  &:hover { color: white; }
+}
+
+.site-subtitle {
+  margin: 10px 10px 0;
+  font-weight: initial;
+}
+
+.site-search form { display: none; }
+
+.site-title {
+  .animate {
+	line-height: 1;
+  }
+}
